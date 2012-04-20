@@ -14,6 +14,9 @@
 
 @implementation ResultsController
 
+@synthesize peaksCount;
+@synthesize labelScore;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,10 +30,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    labelScore.text = [NSString stringWithFormat:@"Your Score: %d", peaksCount];
 }
 
 - (void)viewDidUnload
 {
+    [self setLabelScore:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

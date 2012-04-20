@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultsController : UIViewController
+@property(assign) int peaksCount;
+@property (weak, nonatomic) IBOutlet UILabel *labelScore;
 
 @end
