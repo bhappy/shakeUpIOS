@@ -42,6 +42,14 @@
     
     peaksCount = 0;
     lastPeakX = lastPeakY = lastPeakZ = 0.1;
+    
+    // play sound
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef soundFileURLRef = CFBundleCopyResourceURL(mainBundle, CFSTR("shake-kung-fu"), CFSTR("aiff"), NULL);
+    SystemSoundID soundId;
+    AudioServicesCreateSystemSoundID(soundFileURLRef, &soundId);
+    AudioServicesPlaySystemSound(soundId);
+    CFRelease(soundFileURLRef);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

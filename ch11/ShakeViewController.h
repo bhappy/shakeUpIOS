@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ResultsController.h"
-
+#import <AudioToolbox/AudioToolbox.h>
 @interface ShakeViewController : UIViewController <UIAccelerometerDelegate> {
     int count;
 }

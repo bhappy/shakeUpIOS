@@ -31,7 +31,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    labelScore.text = [NSString stringWithFormat:@"Your Score: %d", peaksCount];
+    labelScore.text = [NSString stringWithFormat:@"Your Score: %d", peaksCount/2];
 }
 
 - (void)viewDidUnload
