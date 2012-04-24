@@ -11,5 +11,6 @@
 @interface ResultsController : UIViewController
 @property(assign) int peaksCount;
 @property (weak, nonatomic) IBOutlet UILabel *labelScore;
+@property (strong, nonatomic) IBOutlet UIImageView *ninjaImage;
 
 @end

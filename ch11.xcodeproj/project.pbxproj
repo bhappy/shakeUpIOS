@@ -17,6 +17,11 @@
 		60C0602C153FBB83003F04AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C0602B153FBB83003F04AD /* ViewController.m */; };
 		60C06041153FCD53003F04AD /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C06040153FCD53003F04AD /* ShakeViewController.m */; };
 		60C0604C153FF0EE003F04AD /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C0604B153FF0EE003F04AD /* ResultsController.m */; };
+		60DE922515463EEE00BA745C /* ninja01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60DE922015463EEE00BA745C /* ninja01.gif */; };
+		60DE922615463EEE00BA745C /* ninja02.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60DE922115463EEE00BA745C /* ninja02.gif */; };
+		60DE922715463EEE00BA745C /* ninja03.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60DE922215463EEE00BA745C /* ninja03.gif */; };
+		60DE922815463EEE00BA745C /* ninja04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60DE922315463EEE00BA745C /* ninja04.gif */; };
+		60DE922915463EEE00BA745C /* ninja05.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60DE922415463EEE00BA745C /* ninja05.gif */; };
 		FE7D073015415CFD00001A66 /* shake-kung-fu.aiff in Resources */ = {isa = PBXBuildFile; fileRef = FE7D072F15415CFD00001A66 /* shake-kung-fu.aiff */; };
 		FE7D073215415D9A00001A66 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7D073115415D9A00001A66 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +44,11 @@
 		60C06040153FCD53003F04AD /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		60C0604A153FF0EE003F04AD /* ResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsController.h; sourceTree = "<group>"; };
 		60C0604B153FF0EE003F04AD /* ResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsController.m; sourceTree = "<group>"; };
+		60DE922015463EEE00BA745C /* ninja01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ninja01.gif; sourceTree = "<group>"; };
+		60DE922115463EEE00BA745C /* ninja02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ninja02.gif; sourceTree = "<group>"; };
+		60DE922215463EEE00BA745C /* ninja03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ninja03.gif; sourceTree = "<group>"; };
+		60DE922315463EEE00BA745C /* ninja04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ninja04.gif; sourceTree = "<group>"; };
+		60DE922415463EEE00BA745C /* ninja05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ninja05.gif; sourceTree = "<group>"; };
 		FE7D072F15415CFD00001A66 /* shake-kung-fu.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "shake-kung-fu.aiff"; sourceTree = "<group>"; };
 		FE7D073115415D9A00001A66 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -106,6 +116,11 @@
 		60C0601C153FBB83003F04AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60DE922015463EEE00BA745C /* ninja01.gif */,
+				60DE922115463EEE00BA745C /* ninja02.gif */,
+				60DE922215463EEE00BA745C /* ninja03.gif */,
+				60DE922315463EEE00BA745C /* ninja04.gif */,
+				60DE922415463EEE00BA745C /* ninja05.gif */,
 				FE7D072F15415CFD00001A66 /* shake-kung-fu.aiff */,
 				60C0601D153FBB83003F04AD /* ch11-Info.plist */,
 				60C0601E153FBB83003F04AD /* InfoPlist.strings */,
@@ -168,6 +183,11 @@
 				60C06020153FBB83003F04AD /* InfoPlist.strings in Resources */,
 				60C06029153FBB83003F04AD /* MainStoryboard.storyboard in Resources */,
 				FE7D073015415CFD00001A66 /* shake-kung-fu.aiff in Resources */,
+				60DE922515463EEE00BA745C /* ninja01.gif in Resources */,
+				60DE922615463EEE00BA745C /* ninja02.gif in Resources */,
+				60DE922715463EEE00BA745C /* ninja03.gif in Resources */,
+				60DE922815463EEE00BA745C /* ninja04.gif in Resources */,
+				60DE922915463EEE00BA745C /* ninja05.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
