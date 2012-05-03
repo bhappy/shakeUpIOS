@@ -14,6 +14,11 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *timerLabel;
 @property (strong, nonatomic) NSTimer *theTimer;
+@property (weak, nonatomic) IBOutlet UITextView *textIntro;
+- (IBAction)clickSignIn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnSignIn;
+
+- (void) updateSignedUser;
 
 - (IBAction)pressReady:(id)sender;
 - (void)countDown:(id)sender;

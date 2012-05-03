@@ -12,6 +12,8 @@
 
 @synthesize window = _window;
 @synthesize facebook;
+@synthesize user_name;
+@synthesize homeScreenVC;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,14 +21,8 @@
     facebook = [[Facebook alloc] initWithAppId:@"298560620220682" andDelegate:self];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ([defaults objectForKey:@"FBAccessTokenKey"] 
-        && [defaults objectForKey:@"FBExpirationDateKey"]) {
-        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
-        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
-    }
-    
-    if (![facebook isSessionValid]) {
-        [facebook authorize:nil];
+    if ([defaults objectForKey:@"SUUserName"]) {
+        user_name = [defaults objectForKey:@"SUUserName"];
     }
     
     return YES;
@@ -49,6 +45,19 @@
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
     
+    [facebook requestWithGraphPath:@"me" andDelegate:self];
+    homeScreenVC.textIntro.text = @"Loading...";
+}
+
+- (void)request:(FBRequest *)request didLoad:(id)result {
+    //handling a user info request, for example
+    if ([[request url] rangeOfString:@"/me"].location != NSNotFound)
+    {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        user_name = [result valueForKey:@"name"];
+        [defaults setObject:user_name forKey:@"SUUserName"];
+        [homeScreenVC updateSignedUser];
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

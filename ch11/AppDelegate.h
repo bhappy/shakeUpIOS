@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "FBConnect.h"
+#import "ViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, FBSessionDelegate> {
+@interface AppDelegate : UIResponder <UIApplicationDelegate, FBSessionDelegate, FBRequestDelegate> {
     Facebook *facebook;
+    NSString *user_name;
 }
 
 @property (nonatomic, retain) Facebook *facebook;
+@property (nonatomic, retain) NSString *user_name;
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet ViewController *homeScreenVC;
 
 @end
